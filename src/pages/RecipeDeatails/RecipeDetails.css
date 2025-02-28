@@ -1,0 +1,146 @@
+.recipe-detail-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.recipe-content {
+  flex: 3;
+}
+
+.recipe-image {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recipe-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.recipe-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.recipe-buttons button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.recipe-buttons button:hover {
+  background-color: var(--hover-color);
+  color: var(--secondary-color) !important;
+}
+
+.recipe-instructions {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  margin-top: 20px;
+  white-space: pre-line;
+}
+
+.ingredients-title {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.ingredient-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.ingredient-button:hover {
+  background-color: #27ae60;
+  color: var(--main-color) !important;
+}
+
+.recipe-sidebar {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.recipe-sidebar h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.sidebar-recipes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-recipe-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar-recipe-item:hover {
+  background: #e0e0e0;
+}
+
+.sidebar-recipe-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .recipe-detail-container {
+    flex-direction: column;
+    max-width: 95%;
+  }
+
+  .recipe-sidebar {
+    margin-top: 20px;
+  }
+}

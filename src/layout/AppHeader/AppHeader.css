@@ -1,0 +1,23 @@
+.app-header {
+  background: var(--main-color);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  height: 80px;
+}
+
+.header-title {
+  color: white !important;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header-title:hover {
+  color: var(--secondary-color) !important;
+}
